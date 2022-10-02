@@ -1,0 +1,98 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background:black;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing:0.8px;
+}
+#profile {
+  background:rgba(255,255,255,0.4);
+  border:4px double rgba(255,255,255,0.7);
+  padding:20px;
+  text-align:center;
+  width:250px;
+  height:50%;
+  left:50%;
+  transform: translate(-50%,0%);
+  position:absolute;
+  top:75px;
+}
+#gamemenu {
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+  background:url('fern.jpg') no-repeat center center;
+  background-size:cover;
+  
+}
+#fight2 {
+  background-color:rgba(255, 255, 255,0.6);
+  
+  font-size:20px;
+  border:4px double rgba(255, 255, 255,0.6);
+  color:white;
+  padding:10px 70px 10px 70px;
+  margin:0px auto;
+  cursor:pointer;
+/*   transition:0.2s linear; */
+  text-align:center;
+  width:150px;
+  position:fixed;
+  top:0px;
+  left:50%;
+  transform: translate(-50%,0%);
+  transition:0.2s linear;
+}
+#fight2:hover {
+  background-color:rgba(255, 255, 255,0.4);
+}
+#fight {
+  background-color:rgba(0, 191, 255,0.6);
+  
+  font-size:20px;
+  border:4px double rgb(51, 128, 153);
+  color:white;
+  padding:10px 70px 10px 70px;
+  margin:30px auto;
+  cursor:pointer;
+/*   transition:0.2s linear; */
+  text-align:center;
+  width:150px;
+  position:fixed;
+  bottom:30px;
+  left:50%;
+  transform: translate(-50%,0%);
+  box-shadow:0px 0px 10px 1px white;
+}
+
+#fight:active {
+  background-color:rgba(255, 255, 255,0.6);
+  border:4px double rgba(255, 255, 255,0.6);
+  color:rgb(51, 128, 153);
+  
+}
+#profileusername {
+  position:absolute;
+  bottom:0px;
+  left:0;
+  text-align:center;
+  width:250px;
+  padding:20px;
+  background:rgba(0,0,0,0.6);
+  color:white;
+  backdrop-filter: blur(10px);
+}
+#profilepic {
+  position:absolute;
+  top:30px;
+  border-radius:100%;
+  background:url('bg2.jpg') no-repeat center center;
+  background-size:cover;
+  width:200px;
+  height:200px;
+  left:50%;
+  transform: translate(-50%,0%);
+  box-shadow:0px 0px 20px 1px black;
+}
