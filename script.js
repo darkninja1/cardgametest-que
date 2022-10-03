@@ -11,7 +11,6 @@ function start() {
     document.getElementById('fight2').style.background = "rgba(255,255,0,0.2)";
     document.getElementById('fight').innerHTML = "IN QUEUE";
     document.getElementById('fight2').innerHTML = "0:00";
-    loadfakeplayer();
   }
   else {
     playsound('click5.mp3');
@@ -38,6 +37,7 @@ function quetimer() {
   else {
     document.getElementById('fight2').innerHTML = min+":"+sec;
   }
+  loadfakeplayer();
 }
 function playsound(sound) {
    var lol = document.createElement("AUDIO");
@@ -51,11 +51,11 @@ function playsound(sound) {
   }
 }
 function loadfakeplayer() {
-  setTimeout(function(){
+  if (sec == 10) {
     clearInterval(timer1);
     playsound('matchfound.mp3');
     countdown();
-  },10000);
+  }
 }
 function deal() {
   document.getElementById('cardholder').innerHTML += `<card>asdf</card><card>asdf</card>`;
