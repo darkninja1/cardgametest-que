@@ -148,10 +148,10 @@ html, body {
   transform: translate(-50%,-60%);
   text-align:center;
   font-size:90px;
-  text-shadow: -1px 1px 1px rgba(255,0,0,0.6),
-                          1px 1px 1px rgba(255,0,0,0.6),
-                         1px -1px 1px rgba(255,0,0,0.6),
-                        -1px -1px 1px rgba(255,0,0,0.6);
+  text-shadow: -1px 1px 1px rgba(0,0,0,0.6),
+                          1px 1px 1px rgba(0,0,0,0.6),
+                         1px -1px 1px rgba(0,0,0,0.6),
+                        -1px -1px 1px rgba(0,0,0,0.6);
 }
 #matchfound {
   color:rgba(255,255,255,0.65);
