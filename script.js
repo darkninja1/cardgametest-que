@@ -51,9 +51,12 @@ function playsound(sound) {
   }
 }
 function loadfakeplayer() {
-  if (sec == 10) {
+  if (sec == 5) {
     clearInterval(timer1);
     playsound('matchfound.mp3');
+    document.getElementById('fight').style.background = "rgba(255,0,0,0.4)";
+    document.getElementById('fight').innerHTML = "Queued";
+    document.getElementById('fight2').innerHTML = "Waiting...";
     countdown();
   }
 }
