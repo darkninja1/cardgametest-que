@@ -141,18 +141,23 @@ html, body {
 }
 #countd {
   color:#c5c9a6;
-  position:absolute;
-  bottom:50%;
+
   
 /*   transform: translate(-50%,-50%); */
   font-size:90px;
 }
 #matchfound {
   color:#ffffff;
-  position:absolute;
-  bottom:50%;
+
   font-weight:900;
   font-size:60px;
+}
+.centered {
+  text-align:center;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
 }
 @keyframes countd {
   0% {
