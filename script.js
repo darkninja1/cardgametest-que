@@ -61,7 +61,9 @@ function deal() {
   document.getElementById('cardholder').innerHTML += `<card>asdf</card><card>asdf</card>`;
 }
 function countdown() {
-  playsound('click3.mp3');
+  if (count1 < 5) {
+    playsound('click3.mp3');
+  }
   document.getElementById('countdown').style.display = 'block';
   var box = document.getElementById("countd");
   document.getElementById('countdown').removeChild(box);
